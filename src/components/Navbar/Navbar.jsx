@@ -40,10 +40,10 @@ const Navbar = ({onSearchChange, onSubmit}) => {
         
       </div>
 
-      <div className="navbar_degree flex__center">
+      {/* <div className="navbar_degree flex__center">
         <p>&deg;C</p>
         <p>&deg;F</p>
-      </div>
+      </div> */}
     </nav>
   );
 };

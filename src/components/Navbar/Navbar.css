@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap: 5rem;
+    gap: 10rem;
     align-items: center;
     padding: 1rem 4rem;
 }
@@ -16,6 +16,10 @@
     line-height: 1.5rem;
     color: var(--color-black);
     margin: 0 1rem;
+}
+
+.navbar_search-bar{
+    width: 350px;
 }
 
 #search-box{
