@@ -13,6 +13,13 @@ const Navbar = ({onSearchChange, onSubmit}) => {
     onSearchChange(e.target.value);
   })
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      onSubmit();
+      setInputValue('');
+    }
+  }
+
   
   return (
     <nav className="navbar">
@@ -22,7 +29,7 @@ const Navbar = ({onSearchChange, onSubmit}) => {
 
       <div className="navbar_search-bar flex__center">
       {/* <GrLocation fontSize={24} className="location" /> */}
-        <input type="text" value={inputValue}  id="search-box" onChange={handleInputChange} placeholder="Enter Location" />
+        <input type="text" value={inputValue}  id="search-box" onChange={handleInputChange} onKeyDown={handleKeyDown} placeholder="Enter Location" />
         <button type="button" id="search-btn" onClick={()=>{
           onSubmit();
           setInputValue("");
