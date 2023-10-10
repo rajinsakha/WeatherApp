@@ -15,8 +15,7 @@ const Information = ({city, apiKey}) => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     try{
       let data = await fetch(url);
-      if (!data.ok) { // If the response status is not in the range 200-299
-        // throw new Error('Network response was not ok');
+      if (!data.ok) { 
         url = `https://api.openweathermap.org/data/2.5/weather?q=kathmandu&units=metric&appid=${apiKey}`;
         data = await fetch(url);
       }

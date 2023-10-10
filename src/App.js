@@ -6,14 +6,15 @@ import { Information, Forecast } from './containers';
 
 
 const App = () => {
-  const apiKey = "b9104fc7bf41a86ef7aef44803f71be1";
+const apiKey = process.env.REACT_APP_API_KEY;
 const [searchInput, setSearchInput] = useState("");
 const [submittedQuery, setSubmittedQuery] = useState("Kathmandu");
+
+console.log(apiKey);
 
 // Created a function which will be called inside Child Component by passing it through props
 const handleSubmit = () => {
   setSubmittedQuery(searchInput);
-
 };
 
   return (
