@@ -1,0 +1,49 @@
+.information{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* margin-top: 15rem; */
+}
+
+.information_weather-logo{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.information_weather-logo img{
+    width: 120px;
+}
+
+.information_weather-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.information_more-details h4{
+    padding-bottom: 2rem;
+}
+
+.information_more-details p, .information_weather-details p{
+    padding-top: 8px;
+}
+
+.temperature{
+    font-size: 5rem;
+    line-height: 6rem;
+    color: var(--color-yellow);
+}
+
+.day-info{
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    text-transform: capitalize;
+}
+
+
