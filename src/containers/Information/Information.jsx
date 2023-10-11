@@ -100,12 +100,12 @@ const Information = ({city, apiKey}) => {
         <h5 className="p__heading">{timeDate.currentTime}</h5>
         {weatherData.map((weather, index) => {
           return (
-            <div className="temperature-details" key={index}>
+            <React.Fragment key={index}>
               <h1 className="temperature">{Math.floor(weather.temp)}&deg;C</h1>
               <p className="p__sub-heading" style={{ color: "#FFF" }}>
                 Feels Like {Math.floor(weather.feels_like)}&deg;C
               </p>
-            </div>
+            </React.Fragment>
           );
         })}
 

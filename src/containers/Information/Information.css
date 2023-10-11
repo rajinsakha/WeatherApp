@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* margin-top: 15rem; */
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .information_weather-logo{
@@ -18,12 +19,13 @@ align-items: center;
     width: 120px;
 }
 
-.information_weather-details{
+.information_weather-details, .information_more-details{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
+
 
 .information_more-details h4{
     padding-bottom: 2rem;
@@ -46,4 +48,27 @@ align-items: center;
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 990px) {d
+    .information{
+        align-items: flex-start;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+   .information{
+    justify-content: center;
+   }
+
+   .information_weather-details, .information_more-details{
+    align-items: center;
+   }
+
+   .information_more-details h4{
+    padding-bottom: 1rem;
+}
+
+}
 

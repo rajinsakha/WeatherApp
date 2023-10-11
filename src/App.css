@@ -27,10 +27,6 @@
   color: var(--color-white);
 }
 
-@media screen and (max-width: 1150px) {
-
-  
-}
 
 @media screen and (max-width: 850px) {
   .section__padding{
@@ -47,6 +43,20 @@
 }
 
 @media screen and (max-width: 450px) {
- 
+  .p__text{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+   
+  }
+  
+  .p__sub-heading{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .p__heading{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
   
 }

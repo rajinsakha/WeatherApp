@@ -45,5 +45,28 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 750px) {
+    .navbar{
+        gap: 0rem;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .navbar_logo h1{
+        font-size: 1.5rem;
+    }
+
+    .navbar_search-bar{
+        width: 50%;
+    }
+    
+}
+
+
+
 
 
